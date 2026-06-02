@@ -1,8 +1,28 @@
 # GiftLink User Stories
 
-## Template
+## User Story Template
 
 As a **[type of user]**, I want **[some goal]** so that **[some reason]**.
+
+## Details and Assumptions
+
+- GiftLink helps people donate and reuse household goods.
+- Users can browse gifts without logging in, but registration and login are required for account-specific features.
+- MongoDB stores gifts, users, comments, and profile information.
+- The frontend is built with React and the backend is built with Node.js and Express.
+- JWT authentication protects user-specific profile actions.
+
+## Acceptance Criteria
+
+Given a visitor opens GiftLink, when they browse available items, then they can see reusable household gifts.
+
+Given a new user submits valid registration details, when the API receives the request, then the user account is created and an auth token is returned.
+
+Given a registered user logs in with valid credentials, when authentication succeeds, then GiftLink stores the JWT token for later requests.
+
+Given a user searches by category, when matching gifts exist, then the matching items are returned.
+
+Given a user views an item, when the gift ID exists, then the item detail page shows the full gift information.
 
 ## Stories
 
